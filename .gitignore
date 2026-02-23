@@ -1,0 +1,4 @@
+stock-pipeline-key.json 
+logs/ 
+__pycache__/ 
+*.pyc 
