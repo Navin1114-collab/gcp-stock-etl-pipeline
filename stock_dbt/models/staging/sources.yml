@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: stock_data
+    database: stock-pipeline-etl
+    schema: stock_data
+    tables:
+      - name: daily_prices
+        description: "Raw daily stock prices fetched from Alpha Vantage API"
+        columns:
+          - name: symbol
+            description: "Stock ticker symbol"
+          - name: date
+            description: "Trading date"
+          - name: close
+            description: "Closing price"
+          - name: volume
+            description: "Trading volume"
